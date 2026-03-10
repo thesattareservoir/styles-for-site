@@ -30,3 +30,20 @@
     text-decoration: none;
     margin-top: 15px;
   }
+/* Base styles for all images in the embed */
+img {
+  max-width: 100%;       /* Ensures the image never overflows the block */
+  height: auto;          /* Maintains the correct aspect ratio */
+  display: block;        /* Removes weird bottom spacing */
+  margin: 20px auto;     /* Centers the image with some breathing room */
+  border-radius: 12px;   /* Soft, modern rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle "lift" from the page */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect: The image grows slightly and shadow gets deeper */
+img:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
