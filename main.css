@@ -17,19 +17,22 @@
   }
 
  .custom-btn-full {
-    background-color: #001f3f; /* Deep blue background */
+    background-color: #001f3f;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     border-radius: 8px;
     border: 2px solid #5a7d9a;
-    width: 100%;
+    width: auto;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 15px;
-  }
+    margin: 15px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
 /* Base styles for all images in the embed */
 img {
   max-width: 100%;       /* Ensures the image never overflows the block */
